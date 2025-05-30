@@ -1,0 +1,16 @@
+[
+    {
+        "name": "NRF24",
+        "nrf24": {
+            "miso": 13,
+            "mosi": 11,
+            "clk": 12,
+            "irq": 5,
+            "en": 1,
+            "cs": 3
+        },
+        "eth": {
+            "enabled": false
+        }
+    }
+]
