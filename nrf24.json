@@ -9,6 +9,11 @@
             "en": 1,
             "cs": 3
         },
+	"display": {
+            "type": 2,
+            "data": 7,
+            "clk": 6
+        },
         "eth": {
             "enabled": false
         }

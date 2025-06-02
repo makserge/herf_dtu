@@ -37,7 +37,9 @@ board_build.partitions = partitions_custom_4mb.csv
 
 Build project and upload it to board via USB
 
-3. Wiring EBYTE E01-ML01DP5 to ESP32-S3
+3. Wiring 
+
+EBYTE E01-ML01DP5 to ESP32-S3
 
 nRF24L01+	ESP32-S3
 VCC		3.3V
@@ -48,6 +50,16 @@ SCK		GPIO 12
 MOSI		GPIO 11
 MISO		GPIO 13
 IRQ		GPIO 5
+
+0.96 Inch OLED
+
+OLED
+
+VCC		5V
+GND		GND
+SDA		GPIO 7
+SCL		GPIO 6	
+
 
 4. Reboot board and connect to AP "OpenDTU-*" with ip 192.168.4.1
 
@@ -66,6 +78,11 @@ nrf24.json
             "irq": 5,
             "en": 1,
             "cs": 3
+        },
+	"display": {
+            "type": 2,
+            "data": 7,
+            "clk": 6
         },
         "eth": {
             "enabled": false
